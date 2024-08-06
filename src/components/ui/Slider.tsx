@@ -31,7 +31,7 @@ const images: { src: string, description: string }[] = [
     }
 ];
 
-// const description: string[] = ['Niwelacja terenu. Przed.', 'Niwelacja terenu. Po.', 'Wykop pod mauzer', 'Instalacja rury kanalizacyjnej']
+
 export const Slider: React.FC = () => {
     return <div className="container">
         <div className="row">
@@ -49,7 +49,7 @@ export const Slider: React.FC = () => {
                                 <Card>
                                     <CardContent className="flex aspect-square items-center justify-center p-0 h-[80%] shadow-2xl">
 
-                                        <Image src={src} width={700} height={1000} alt="portfolio" />
+                                        <Image src={src} width={700} height={1000} alt="portfolio" className="object-cover rounded-lg" />
                                     </CardContent>
                                     <div className="text-center p-2"> <span>{description}</span></div>
 
