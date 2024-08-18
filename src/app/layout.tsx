@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pl">
-      <body className={`${poppins.className} font-serif bg-[#333333] text-white`}>{children}</body>
+      <body className={`${poppins.className} font-serif bg-[#333333] text-white w-screen `}>{children}</body>
     </html>
   );
 }

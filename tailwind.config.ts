@@ -27,6 +27,7 @@ const config = {
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
+          
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
@@ -52,6 +53,7 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        bannerBg:"rgba(255, 255, 255, 0.95)",
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -72,6 +74,7 @@ const config = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
+      
     },
   },
   plugins: [require("tailwindcss-animate")],

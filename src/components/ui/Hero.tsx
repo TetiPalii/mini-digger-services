@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 
 export const Hero: React.FC = () => {
-    return <div className="container h-full">
+    return <div className="container">
         <div className="row">
             <div className="banner">
                 <div className="home-banner-bg">

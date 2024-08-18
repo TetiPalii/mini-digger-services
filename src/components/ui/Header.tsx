@@ -4,7 +4,7 @@ import React, { useEffect, useRef, useState } from 'react';
 
 export const Header: React.FC = () => {
     const [isScrolled, setIsScrolled] = useState(false);
-    const headerRef = useRef<HTMLElement>(null)
+    const headerRef = useRef<HTMLElement>(null);
 
     useEffect(() => {
         const observer = new IntersectionObserver(([entry]) => {
@@ -18,8 +18,9 @@ export const Header: React.FC = () => {
                 }
             }
         }
-    }, [])
-    return <header ref={headerRef} >
+    }, []);
+
+    return <header ref={headerRef} className="w-full" >
         <nav className={`header-nav ${isScrolled ? 'header-scrolled' : 'header-initial'}`
         }>
             <div className="contact-info">

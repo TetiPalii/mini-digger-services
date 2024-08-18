@@ -71,6 +71,7 @@
       scroll-behavior: smooth ;
       
     }
+    
     .header-nav{
       padding: 0;
       position: fixed;
@@ -81,10 +82,11 @@
       color: #fff;
     }
     
-    .header-initial{
+    .header-bg{
       box-shadow: 0px 5px 30px 1px rgba(0, 0, 0, 0.75);
       background-color: rgba(0, 0, 0, 0.5);
-      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), #00000000)
+      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), #00000000);
+      
     }
 
     .header-scrolled{
@@ -97,7 +99,7 @@
     
     }
     .container{
-      width: 100%;
+      max-width: 100%;
       padding-right: 15px;
       padding-left: 15px;
       margin-right: auto;
@@ -162,7 +164,7 @@
       flex-direction: column;
     }
     .home-banner-bg{
-      padding: 50px 80px;
+     
       background-color: rgba(255, 255, 255, 0.95);
       border-radius: 20px;
       text-align: center;
@@ -220,12 +222,11 @@
         max-width: 50%;
       }
     }
-    .about-bg::before{
-        content: '';
+    .about-bg{
         position: absolute;
         top: 30px;
-        left: -30px;
-        width: 100%;
+        left: -5%;
+        width: 90%;
         height: 100%;
         /* border: 3px solid #0056cf; */
         /* background: rgb(255, 255, 255); */
@@ -238,9 +239,24 @@
     .img{
       width:100%;
       height:100%;
+      min-width:200px;
+      min-height: 500px;
       background-image: url('../../public/background/escavator.jpeg');
       background-size: cover;
+      background-repeat: no-repeat;
+      object-fit: cover;
       border-radius: 25px;
       box-shadow: 8px 8px 24px 0px rgba(0, 0, 0, 0.594);
+      z-index: 100;
+    }
+
+    .sectionBg{
+      background-image: url('../../public/background/escavator.jpeg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      object-fit: cover;
+      background-attachment:fixed;
+      
+      
     }
   }
