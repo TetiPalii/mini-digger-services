@@ -63,11 +63,15 @@ export default function Home() {
         </Container>
       </HeroSection>
 
-      <Section id="services">
+      <Section id="services" >
+        <div className='sectionBg shadow-lgs'>
+          <Container >
+            <Services />
+          </Container>
+        </div>
 
-        <Container>
-          <Services />
-        </Container>
+
+
 
       </Section>
       <Section className="pt-12  min-h-screen">

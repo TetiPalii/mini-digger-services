@@ -14,12 +14,12 @@ const services: string[] = [
 ]
 
 export const Services: React.FC = () => {
-    return <div className="flex flex-col  justify-center items-center">
-        <h2 className=" hidden sm:block text-2xl sm:text-3xl md:text-4xl font-semibold lg:text-6xl  md:mb-14 uppercase text-center mb-10">Wykonujemy</h2>
+    return <div className="flex flex-col  justify-center items-center  text-[#333] py-10 md:text-inherit">
+        <h2 className=" text-2xl sm:text-3xl md:text-4xl font-semibold lg:text-6xl  md:mb-10 uppercase text-center mb-2">Wykonujemy</h2>
         <div className="relative flex justify-center items-center md:gap-x-4 mb-10 md:mb-14 w-full">
 
 
-            <div className="md:hidden sectionBg p-10 rounded-3xl shadow-2xl min-h-screen">
+            {/* <div className="md:hidden  p-10 rounded-3xl shadow-2xl min-h-screen">
                 <div className=" bg-bannerBg text-[#333] rounded-3xl shadow-2xl font-semibold py-10">
                     <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold lg:text-6xl  md:mb-14 uppercase text-center mb-10">Wykonujemy</h2>
                     <ul className="flex flex-col gap-y-4 w-full justify-center  items-center list-disc list-inside">
@@ -46,7 +46,7 @@ export const Services: React.FC = () => {
                     </ul >
                 </div>
 
-            </div>
+            </div> */}
 
 
             <div className="hidden md:about">
@@ -55,7 +55,7 @@ export const Services: React.FC = () => {
                 <div className="img"></div>
 
             </div>
-            <ul className="flex-col gap-y-4 w-full justify-center  items-center list-disc list-inside hidden md:flex">
+            <ul className="flex-col gap-y-4 w-full justify-center  items-center list-disc list-inside font-semibold">
                 {services.map((service, idx) => {
                     let lastService = '';
                     let firstWord = '';

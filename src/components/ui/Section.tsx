@@ -8,8 +8,8 @@ interface SectionProps {
     id?: string;
 }
 
-export const Section: React.FC<SectionProps> = ({ children, className, id = '' }) => {
-    return <section className={className ? className : className = "flex flex-col justify-center w-full py-20 min-h-screen "} id={id}>
+export const Section: React.FC<SectionProps> = ({ children, className = '', id = '' }) => {
+    return <section className={`flex flex-col justify-center items-center w-full py-20 min-h-screen ${className}`} id={id}>
         {children}
     </section>
 }
