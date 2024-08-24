@@ -44,8 +44,8 @@ export default function Home() {
   }, [])
   console.log(isScrolled)
   return <>
-    <header ref={headerRef} className={`w-full   `}>
-      <div className={`fixed z-50 top-0 py-5 w-full header-bg ${isScrolled ? "header-scrolled" : "header-initial"}`}>
+    <header ref={headerRef} className={`max-w-full   `}>
+      <div className={`max-w-full fixed z-50 top-0 py-5 w-full header-bg ${isScrolled ? "header-scrolled" : "header-initial w-full"}`}>
         <Container>
           <NavBar />
         </Container>
@@ -63,19 +63,16 @@ export default function Home() {
         </Container>
       </HeroSection>
 
-      <Section id="services" >
-        <div className='sectionBg shadow-lgs'>
-          <Container >
-            <Services />
-          </Container>
-        </div>
-
-
-
-
+      <Section id="services" className='sectionBg shadow-lg' >
+        <Container >
+          <Services />
+        </Container>
       </Section>
-      <Section className="pt-12  min-h-screen">
-        <Slider />
+
+      <Section>
+        <Container>
+          <Slider />
+        </Container>
       </Section>
 
     </main>

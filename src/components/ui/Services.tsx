@@ -14,40 +14,9 @@ const services: string[] = [
 ]
 
 export const Services: React.FC = () => {
-    return <div className="flex flex-col  justify-center items-center  text-[#333] py-10 md:text-inherit">
+    return <div className="flex flex-col  justify-center items-center  text-[#333] py-2 md:text-inherit">
         <h2 className=" text-2xl sm:text-3xl md:text-4xl font-semibold lg:text-6xl  md:mb-10 uppercase text-center mb-2">Wykonujemy</h2>
         <div className="relative flex justify-center items-center md:gap-x-4 mb-10 md:mb-14 w-full">
-
-
-            {/* <div className="md:hidden  p-10 rounded-3xl shadow-2xl min-h-screen">
-                <div className=" bg-bannerBg text-[#333] rounded-3xl shadow-2xl font-semibold py-10">
-                    <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold lg:text-6xl  md:mb-14 uppercase text-center mb-10">Wykonujemy</h2>
-                    <ul className="flex flex-col gap-y-4 w-full justify-center  items-center list-disc list-inside">
-                        {services.map((service, idx) => {
-                            let lastService = '';
-                            let firstWord = '';
-                            const lastElIdx = services.length - 1;
-
-                            if (service.includes('Zadzwoń')) {
-
-                                const [firstEl, ...rest] = service.split(' ');
-
-                                lastService = rest.join(' ');
-                                firstWord = firstEl;
-                            }
-
-                            return <li className="w-full text-center list-item" key={service}>
-
-                                {lastElIdx === idx ? <p className="text-xl md:text-2xl"> <a href="tel:+512 419 032" className="text-red-600">{firstWord}</a> {lastService}</p> : <p className="text-xl md:text-2xl">{service}</p>}
-
-                            </li>
-                        })}
-
-                    </ul >
-                </div>
-
-            </div> */}
-
 
             <div className="hidden md:about">
 
@@ -55,7 +24,7 @@ export const Services: React.FC = () => {
                 <div className="img"></div>
 
             </div>
-            <ul className="flex-col gap-y-4 w-full justify-center  items-center list-disc list-inside font-semibold">
+            <ul className="flex-col gap-y-2 w-full justify-center  items-center list-disc list-inside font-semibold">
                 {services.map((service, idx) => {
                     let lastService = '';
                     let firstWord = '';

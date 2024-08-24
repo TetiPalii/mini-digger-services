@@ -9,7 +9,7 @@ interface SectionProps {
 }
 
 export const Section: React.FC<SectionProps> = ({ children, className = '', id = '' }) => {
-    return <section className={`flex flex-col justify-center items-center w-full py-20 min-h-screen ${className}`} id={id}>
+    return <section className={`flex flex-col justify-center items-center w-full py-10 min-h-screen ${className}`} id={id}>
         {children}
     </section>
 }
