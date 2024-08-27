@@ -64,7 +64,7 @@ export default function Home() {
       </HeroSection>
 
       <Section id="services" className='sectionBg shadow-lg' >
-        <Container >
+        <Container className="max-w-100%" >
           <Services />
         </Container>
       </Section>

@@ -14,9 +14,9 @@ const services: string[] = [
 ]
 
 export const Services: React.FC = () => {
-    return <div className="flex flex-col  justify-center items-center  text-[#333] py-2 md:text-inherit">
-        <h2 className=" text-2xl sm:text-3xl md:text-4xl font-semibold lg:text-6xl  md:mb-10 uppercase text-center mb-2">Wykonujemy</h2>
-        <div className="relative flex justify-center items-center md:gap-x-4 mb-10 md:mb-14 w-full">
+    return <div className="flex flex-col  justify-center items-center md:text-inherit">
+        <h2 className=" text-xl sm:text-3xl md:text-4xl font-semibold lg:text-6xl  md:mb-10 uppercase text-center mb-2 text-[#333] md:text-inherit">Wykonujemy</h2>
+        <div className="relative flex justify-center items-center md:gap-x-4  w-full">
 
             <div className="hidden md:about">
 
@@ -24,7 +24,7 @@ export const Services: React.FC = () => {
                 <div className="img"></div>
 
             </div>
-            <ul className="flex-col gap-y-2 w-full justify-center  items-center list-disc list-inside font-semibold">
+            <ul className="flex-col gap-y-1 w-full justify-center  items-center list-disc list-inside font-medium text-[#333] md:text-inherit">
                 {services.map((service, idx) => {
                     let lastService = '';
                     let firstWord = '';
@@ -38,7 +38,7 @@ export const Services: React.FC = () => {
                         firstWord = firstEl;
                     }
 
-                    return <li className="w-full text-center list-item" key={service}>
+                    return <li className=" text-center list-item text-sm" key={service}>
 
                         {lastElIdx === idx ? <p className="text-xl md:text-2xl"> <a href="tel:+512 419 032" className="text-red-600">{firstWord}</a> {lastService}</p> : <p className="text-xl md:text-2xl">{service}</p>}
 
